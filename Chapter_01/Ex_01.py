@@ -84,13 +84,57 @@ normed_subset = count_subset.div(count_subset.sum(1),axis=0)
 normed_subset.plot(kind='barh',stacked=True)
 # plt.show()
 
+#
+# unames = ['user_id','gender','age','occupation','zip']
+# users = pd.read_table('users.dat',sep='::',header=None,names=unames,engine='python')
+# rnames = ['user_id','movie_id','rating','timestamp']
+# ratings = pd.read_table('ratings.dat',sep="::",header=None,names=rnames,engine='python')
+# mnames = ['movie_id','title','genres']
+# movies = pd.read_table('movies.dat',sep="::",header=None,names=mnames,engine='python')
+# # print(users[:5])
+# data = pd.merge(pd.merge(ratings,users),movies)
+# mean_ratings = data.pivot_table('rating',index='title',columns='gender',aggfunc='mean')
+# raings_by_title = data.groupby('title').size()
+# active_titles = raings_by_title.index[raings_by_title >= 250]
+# mean_ratings = mean_ratings.ix[active_titles]
+# top_female_ratings = mean_ratings.sort_index(by='F',ascending=False)
+# mean_ratings['diff'] = mean_ratings['M'] - mean_ratings['F']
+# sorted_by_diff = mean_ratings.sort_index(by='diff')
+# #print(sorted_by_diff[::-1][:15])
+# rating_std_by_title = data.groupby('title')['rating'].std()
+# rating_std_by_title = rating_std_by_title.ix[active_titles]
+# print(rating_std_by_title.sort_values(ascending=False)[:10])
 
-unames = ['user_id','gender','age','occupation','zip']
-users = pd.read_table('users.dat',sep='::',header=None,names=unames,engine='python')
-rnames = ['user_id','movie_id','rating','timestamp']
-ratings = pd.read_table('ratings.dat',sep="::",header=None,names=rnames,engine='python')
-mnames = ['movie_id','title','genres']
-movies = pd.read_table('movies.dat',sep="::",header=None,names=mnames,engine='python')
-print(users[:5])
+names1880 = pd.read_csv('yob1880.txt',names=['name','sex','births'])
+#print(names1880)
+#print(names1880.groupby('sex').births.sum())
+
+years = range(1880,2011)
+pieces = []
+columns = ['name','sex','births']
+for year in years:
+    path = f'babynames/yob{year}.txt'
+    frame = pd.read_csv(path,names=columns)
+
+    frame['year'] = year
+    pieces.append(frame)
+names = pd.concat(pieces,ignore_index=True)
+# print(names)
+total_births = names.pivot_table('births',index='year',columns='sex',aggfunc=sum)
+#print(total_births[-5:])
+total_births.plot(title='Total births by set and year')
+# plt.show()
 
 
+def add_prop(group):
+    births = group.births.astype(float)
+    group['prop'] = births / births.sum()
+    return group
+names = names.groupby(['year','sex']).apply(add_prop)
+
+#print(np.allclose(names.groupby(['year','sex']).prop.sum(),1))
+def get_top1000(group):
+    return group.sort_index(by='births',ascending=False)[:1000]
+grouped = names.groupby(['year','sex'])
+top1000 = grouped.apply(get_top1000)
+#print(top1000)
