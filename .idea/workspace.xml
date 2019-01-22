@@ -6,7 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57a16cd8-444c-464a-86ea-e66f10dbca3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter_01/iris_DecisionTree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter_01/iris_DecisionTree_Enum.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,6 +20,7 @@
     <SUITE FILE_PATH="coverage/data_analysis$numpy_learning.coverage" NAME="numpy_learning Coverage Results" MODIFIED="1547812804169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_04" />
     <SUITE FILE_PATH="coverage/data_analysis$iris_DecisionTree.coverage" NAME="iris_DecisionTree Coverage Results" MODIFIED="1548136690620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_01" />
     <SUITE FILE_PATH="coverage/data_analysis$pandas_learning.coverage" NAME="pandas_learning Coverage Results" MODIFIED="1547943559977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_04" />
+    <SUITE FILE_PATH="coverage/data_analysis$iris_DecisionTree_Enum.coverage" NAME="iris_DecisionTree_Enum Coverage Results" MODIFIED="1548137254447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_01" />
     <SUITE FILE_PATH="coverage/data_analysis$cross_validation.coverage" NAME="cross_validation Coverage Results" MODIFIED="1547782505803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/data_analysis$sklearn_learning.coverage" NAME="sklearn_learning Coverage Results" MODIFIED="1548030780810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_01" />
     <SUITE FILE_PATH="coverage/data_analysis$Ex_01.coverage" NAME="Ex_01 Coverage Results" MODIFIED="1547795111027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_01" />
@@ -39,7 +40,7 @@
         <counts>
           <entry key="csv" value="2" />
           <entry key="data" value="2" />
-          <entry key="py" value="23" />
+          <entry key="py" value="24" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
@@ -47,21 +48,21 @@
         <counts>
           <entry key="CSV" value="2" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="23" />
+          <entry key="Python" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="csv" value="4" />
           <entry key="dummy" value="4" />
-          <entry key="py" value="9959" />
+          <entry key="py" value="10225" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSV" value="4" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="9959" />
+          <entry key="Python" value="10225" />
         </counts>
       </usages-collector>
     </session>
@@ -69,69 +70,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter_01/sklearn_learning.py">
+        <entry file="file://$PROJECT_DIR$/Chapter_01/iris_DecisionTree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1041">
-              <caret line="69" column="10" lean-forward="true" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
+            <state relative-caret-position="1205">
+              <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
               <folding>
                 <element signature="e#79#97#0" expanded="true" />
-                <marker date="1547989888692" expanded="true" signature="478:483" ph="..." />
-                <marker date="1547989888692" expanded="true" signature="608:618" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter_01/iris_DecisionTree.py">
+        <entry file="file://$PROJECT_DIR$/Chapter_01/iris_DecisionTree_Enum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            <state relative-caret-position="1103">
+              <caret line="58" column="51" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="51" />
               <folding>
                 <element signature="e#79#97#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter_04/rf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter_04/pandas_learning.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-              <folding>
-                <element signature="e#79#98#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter_04/svm_learning.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="4" />
-              <folding>
-                <element signature="e#79#97#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter_01/iris.data">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -161,6 +118,7 @@
         <option value="$PROJECT_DIR$/Chapter_04/svm_learning.py" />
         <option value="$PROJECT_DIR$/Chapter_04/re.py" />
         <option value="$PROJECT_DIR$/Chapter_01/iris_DecisionTree.py" />
+        <option value="$PROJECT_DIR$/Chapter_01/iris_DecisionTree_Enum.py" />
       </list>
     </option>
   </component>
@@ -170,9 +128,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="592" />
-    <option name="y" value="122" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-25" />
+    <option name="y" value="56" />
     <option name="width" value="1563" />
     <option name="height" value="1103" />
   </component>
@@ -252,7 +210,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.iris_DecisionTree">
+  <component name="RunManager" selected="Python.iris_DecisionTree_Enum">
     <configuration name="data_load" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="data_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -297,7 +255,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="numpy_learning" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="iris_DecisionTree_Enum" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="data_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -305,12 +263,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chapter_04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chapter_01" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chapter_04/numpy_learning.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chapter_01/iris_DecisionTree_Enum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -364,19 +322,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.numpy_learning" />
       <item itemvalue="Python.pandas_learning" />
       <item itemvalue="Python.data_load" />
       <item itemvalue="Python.sklearn_learning" />
       <item itemvalue="Python.iris_DecisionTree" />
+      <item itemvalue="Python.iris_DecisionTree_Enum" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.iris_DecisionTree_Enum" />
         <item itemvalue="Python.iris_DecisionTree" />
         <item itemvalue="Python.sklearn_learning" />
         <item itemvalue="Python.data_load" />
         <item itemvalue="Python.pandas_learning" />
-        <item itemvalue="Python.numpy_learning" />
       </list>
     </recent_temporary>
   </component>
@@ -394,7 +352,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="474" y="98" width="1250" height="882" extended-state="0" />
+    <frame x="-20" y="45" width="1250" height="882" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.16946308" />
@@ -402,7 +360,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43124166" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32443258" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -600,8 +558,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter_01/iris_DecisionTree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        <state relative-caret-position="1205">
+          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+          <folding>
+            <element signature="e#79#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter_01/iris_DecisionTree_Enum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1103">
+          <caret line="58" column="51" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="51" />
           <folding>
             <element signature="e#79#97#0" expanded="true" />
           </folding>
