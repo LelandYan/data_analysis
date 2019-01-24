@@ -71,3 +71,85 @@ data2 = pd.concat([s1, s2], keys=['one', 'two'])
 # duplicated()方法返回一个布尔型Series,表示各行是否是重复行
 # drop_duplicates()删除重复的行
 
+data = DataFrame({'food': ['bacon', 'pulled pork', 'bacon', 'Pastrami', 'corned beef', 'Bacon', 'pastrami', 'honey ham',
+                           'nova lox'], 'ounces': [4, 3, 12, 6, 7.5, 8, 3, 5, 6]})
+meat_to_animal = {
+    'bacon': 'pig',
+    'pulled pork': 'pig',
+    'pastrami': 'cow',
+    'corned beef': 'pig',
+    'honey ham': 'pig',
+    'nova lox': 'salmon'
+}
+# data['animal'] = data['food'].map(str.lower).map(meat_to_animal)
+# data['food'].map(lambda x: meat_to_animal[x.lower()])
+# print(data['food'].map(lambda x: meat_to_animal[x.lower()]))
+# 替换值
+# datas = Series([1., -999, 2, -999, -1000., 3.])
+# datas.replace(-999,np.nan)
+# print(datas)
+
+# 离散化和面元划分 pd.cut()
+ages = [20, 22, 25, 27, 21, 23, 37, 31, 61, 45, 41, 32]
+bins = [18, 25, 35, 60, 100]
+cats = pd.cut(ages, bins)
+# print(pd.value_counts(cats))
+
+# 检测和过滤异常值
+# np.random.seed(12345)
+# data = DataFrame(np.random.rand(1000, 4))
+# print(data.describe())
+
+# 排列和随机取样np.random.permutation() 与 take()
+# numpy.random.permutation函数可以实现排列的工作
+df = DataFrame(np.arange(5 * 4).reshape(5, 4))
+sampler = np.random.permutation(5)
+# print(df.take(sampler))
+# print(df.take(np.random.permutation(len(df))[:3]))
+# np.random.randint()得到一个组随机整数
+
+
+# 计算指标/哑变量 pd.get_dummies()
+# df1 = DataFrame({'key': ['b', 'b', 'a', 'c', 'a', 'b'], 'data1': range(6)})
+# print(df1)
+# print(pd.get_dummies(df1['key']))
+
+# names = ['movie_id', 'title', 'genres']
+# movies = pd.read_csv('movies.dat', sep="::", header=None, names=names, engine='python')
+# # print(movies[:10])
+# genre_iter = (set(x.split("|")) for x in movies.genres)
+# genres = sorted(set.union(*genre_iter))
+# dummies = DataFrame(np.zeros((len(movies), len(genres))), columns=genres)
+# for i, gen in enumerate(movies.genres):
+#     dummies.ix[i, gen.split('|')] = 1
+# movies_windic = movies.join(dummies.add_prefix('Genre_'))
+# print(movies_windic.ix[0])
+
+# 字符串对象方法
+import json
+
+db = json.load(open('database.json'))
+# print(db[0]['nutrients'])
+nutrients = DataFrame(db[0]['nutrients'])
+info_keys = ['description', 'group', 'id', 'manufacturer']
+info = DataFrame(db, columns=info_keys)
+# print(pd.value_counts(info.group)[:10])
+nutrients = []
+for rec in db:
+    fnuts = DataFrame(rec['nutrients'])
+    fnuts['id'] = rec['id']
+    nutrients.append(fnuts)
+nutrients = pd.concat(nutrients, ignore_index=True)
+nutrients = nutrients.drop_duplicates()
+col_mapping = {
+    'description': 'nutrient',
+    'group': 'fgroup'
+}
+import matplotlib.pyplot as plt
+
+# info = info.rename(columns=col_mapping, copy=False)
+# # print(info)
+# ndata = pd.merge(nutrients, info, on='id', how='outer')
+# result = ndata.groupby(['nutrient', 'fgroup'])['value'].quantile(0.5)
+# result['Zinc', 'Zn'].order().plot(kind='barh')
+# plt.show()
