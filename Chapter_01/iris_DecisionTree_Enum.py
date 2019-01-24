@@ -10,14 +10,13 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
-
 if __name__ == '__main__':
     mpl.rcParams['font.sans-serif'] = ['SimHei']
     mpl.rcParams['axes.unicode_minus'] = False
 
     iris_feature = '花萼长度', '花萼宽度', '花瓣长度', '花瓣宽度'
     path = 'iris.data'  # 数据文件路径
-    data = pd.read_csv(path,header=None)
+    data = pd.read_csv(path, header=None)
     x_prime = data[list(range(4))]
     y = pd.Categorical(data[4]).codes
     x_prime_train, x_prime_test, y_train, y_test = train_test_split(x_prime, y, train_size=0.7, random_state=0)
@@ -55,7 +54,7 @@ if __name__ == '__main__':
         y_hat = model.predict(x_show)
         y_hat = y_hat.reshape(x1.shape)
         plt.subplot(2, 3, i + 1)
-        #plt.contour(x1, x2, y_hat, colors='k', levels=[0, 1], antialiased=True, linewidths=1)
+        # plt.contour(x1, x2, y_hat, colors='k', levels=[0, 1], antialiased=True, linewidths=1)
         plt.pcolormesh(x1, x2, y_hat, cmap=cm_light)  # 预测值
         plt.scatter(x_train[pair[0]], x_train[pair[1]], c=y_train, s=20, edgecolors='k', cmap=cm_dark, label='训练集')
         plt.scatter(x_test[pair[0]], x_test[pair[1]], c=y_test, s=80, marker='*', edgecolors='k', cmap=cm_dark,
