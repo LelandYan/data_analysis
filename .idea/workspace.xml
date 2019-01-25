@@ -6,10 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57a16cd8-444c-464a-86ea-e66f10dbca3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter_07/database.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter_07/movies.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter_08/Haiti.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter_08/macrodata.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter_08/matplotlib_learning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter_08/spx.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter_08/tips.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter_07/pandas_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter_07/pandas_learning.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +24,7 @@
     <SUITE FILE_PATH="coverage/data_analysis$data_load.coverage" NAME="data_load Coverage Results" MODIFIED="1547946873883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_06" />
     <SUITE FILE_PATH="coverage/data_analysis$pandas_learning.coverage" NAME="pandas_learning Coverage Results" MODIFIED="1547943559977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_04" />
     <SUITE FILE_PATH="coverage/data_analysis$Ex_01.coverage" NAME="Ex_01 Coverage Results" MODIFIED="1547795111027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_01" />
+    <SUITE FILE_PATH="coverage/data_analysis$matplotlib_learning.coverage" NAME="matplotlib_learning Coverage Results" MODIFIED="1548383787144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_08" />
     <SUITE FILE_PATH="coverage/data_analysis$iris_DecisionTree_Enum.coverage" NAME="iris_DecisionTree_Enum Coverage Results" MODIFIED="1548137254447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_01" />
     <SUITE FILE_PATH="coverage/data_analysis$iris_DecisionTree.coverage" NAME="iris_DecisionTree Coverage Results" MODIFIED="1548136690620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_01" />
     <SUITE FILE_PATH="coverage/data_analysis$cross_validation.coverage" NAME="cross_validation Coverage Results" MODIFIED="1547782505803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -30,44 +33,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter_01/iris_DecisionTree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
-              <folding>
-                <element signature="e#79#97#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter_01/iris_DecisionTree_Enum.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1518">
-              <caret line="52" column="60" selection-start-line="52" selection-start-column="60" selection-end-line="52" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cross_validation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="109" column="34" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter_07/pandas_learning.py">
+        <entry file="file://$PROJECT_DIR$/Chapter_08/matplotlib_learning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
-              <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+            <state relative-caret-position="-85">
+              <caret line="129" column="50" lean-forward="true" selection-start-line="129" selection-start-column="50" selection-end-line="129" selection-end-column="50" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
-                <marker date="1548335998023" expanded="true" signature="3517:3607" ph="..." />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,13 +72,14 @@
         <option value="$PROJECT_DIR$/Chapter_01/iris_DecisionTree_Enum.py" />
         <option value="$PROJECT_DIR$/cross_validation.py" />
         <option value="$PROJECT_DIR$/Chapter_07/pandas_learning.py" />
+        <option value="$PROJECT_DIR$/Chapter_08/matplotlib_learning.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="66" />
-    <option name="y" value="15" />
-    <option name="width" value="1563" />
+    <option name="x" value="439" />
+    <option name="y" value="63" />
+    <option name="width" value="1559" />
     <option name="height" value="920" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -142,7 +115,7 @@
             <path>
               <item name="data_analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="data_analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter_07" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter_08" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -159,6 +132,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\无名氏\Desktop\data_analysis\Chapter_08" />
       <recent name="C:\Users\无名氏\Desktop\data_analysis\Chapter_07" />
       <recent name="C:\Users\lenovo\Desktop\data_analysis\Chapter_01" />
       <recent name="C:\Users\lenovo\Desktop\data_analysis\Chapter_06" />
@@ -176,29 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pandas_learning (1)">
-    <configuration name="data_load" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="data_analysis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chapter_06" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chapter_06/data_load.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.matplotlib_learning">
     <configuration name="iris_DecisionTree" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="data_analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -235,6 +187,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chapter_01/iris_DecisionTree_Enum.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="matplotlib_learning" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="data_analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chapter_08" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chapter_08/matplotlib_learning.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -288,19 +262,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.data_load" />
       <item itemvalue="Python.sklearn_learning" />
       <item itemvalue="Python.iris_DecisionTree" />
       <item itemvalue="Python.iris_DecisionTree_Enum" />
       <item itemvalue="Python.pandas_learning (1)" />
+      <item itemvalue="Python.matplotlib_learning" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.matplotlib_learning" />
         <item itemvalue="Python.pandas_learning (1)" />
         <item itemvalue="Python.iris_DecisionTree_Enum" />
         <item itemvalue="Python.iris_DecisionTree" />
         <item itemvalue="Python.sklearn_learning" />
-        <item itemvalue="Python.data_load" />
       </list>
     </recent_temporary>
   </component>
@@ -314,23 +288,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547731533189</updated>
-      <workItem from="1548320204942" duration="12734000" />
+      <workItem from="1548320204942" duration="21266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12734000" />
+    <option name="totallyTimeSpent" value="21266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16902314" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08483291" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42857143" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3800539" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -516,11 +490,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter_07/pandas_learning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="148" lean-forward="true" selection-start-line="148" selection-end-line="148" />
+        <state relative-caret-position="164">
+          <caret line="144" column="30" lean-forward="true" selection-start-line="144" selection-start-column="30" selection-end-line="144" selection-end-column="30" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <marker date="1548335998023" expanded="true" signature="3517:3607" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter_08/spx.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-180370" />
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter_08/figpath.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter_08/tips.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret column="14" selection-start-column="11" selection-end-column="14" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter_08/macrodata.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter_08/Haiti.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-4257" />
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter_08/matplotlib_learning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="129" column="50" lean-forward="true" selection-start-line="129" selection-start-column="50" selection-end-line="129" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
