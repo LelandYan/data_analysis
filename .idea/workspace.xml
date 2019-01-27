@@ -6,9 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57a16cd8-444c-464a-86ea-e66f10dbca3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter_09/kears_learning.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Chapter_09/tips.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter_09/stock_px.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter_09/kears_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter_09/kears_learning.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,27 +24,18 @@
     <SUITE FILE_PATH="coverage/data_analysis$matplotlib_learning.coverage" NAME="matplotlib_learning Coverage Results" MODIFIED="1548383787144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_08" />
     <SUITE FILE_PATH="coverage/data_analysis$iris_DecisionTree_Enum.coverage" NAME="iris_DecisionTree_Enum Coverage Results" MODIFIED="1548137254447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_01" />
     <SUITE FILE_PATH="coverage/data_analysis$iris_DecisionTree.coverage" NAME="iris_DecisionTree Coverage Results" MODIFIED="1548136690620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_01" />
-    <SUITE FILE_PATH="coverage/data_analysis$kears_learning.coverage" NAME="kears_learning Coverage Results" MODIFIED="1548557576566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_09" />
+    <SUITE FILE_PATH="coverage/data_analysis$kears_learning.coverage" NAME="kears_learning Coverage Results" MODIFIED="1548568397661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_09" />
     <SUITE FILE_PATH="coverage/data_analysis$cross_validation.coverage" NAME="cross_validation Coverage Results" MODIFIED="1547782505803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/data_analysis$pandas_learning__1_.coverage" NAME="pandas_learning (1) Coverage Results" MODIFIED="1548335943858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_07" />
     <SUITE FILE_PATH="coverage/data_analysis$sklearn_learning.coverage" NAME="sklearn_learning Coverage Results" MODIFIED="1548030780810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chapter_01" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter_08/matplotlib_learning.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-878">
-              <caret line="48" column="3" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chapter_09/kears_learning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+            <state relative-caret-position="231">
+              <caret line="136" column="18" lean-forward="true" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -119,11 +110,6 @@
             <path>
               <item name="data_analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="data_analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data_analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data_analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter_09" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -297,15 +283,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547731533189</updated>
-      <workItem from="1548320204942" duration="29174000" />
+      <workItem from="1548320204942" duration="34981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29174000" />
+    <option name="totallyTimeSpent" value="34981000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.084190235" />
@@ -556,10 +542,20 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter_09/stock_px.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="8" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter_09/kears_learning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+        <state relative-caret-position="231">
+          <caret line="136" column="18" lean-forward="true" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

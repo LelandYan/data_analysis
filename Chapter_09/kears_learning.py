@@ -11,7 +11,7 @@ grouped = df['data1'].groupby(df['key1'])
 # print(grouped.mean())
 means = df['data1'].groupby([df['key1'], df['key2']]).mean()
 # print(means.unstack())
-states = np.array(['Ohio', 'California', 'California', 'Ohio', 'Ohio'])
+# states = np.array(['Ohio', 'California', 'California', 'Ohio', 'Ohio'])
 years = np.array([2005, 2005, 2006, 2005, 2006])
 # GroupBy的size方法,他可以返回一个含有分组的大小的Series
 
@@ -65,4 +65,77 @@ k1_means = df.groupby('key1').mean().add_prefix('mean_')
 pd.merge(df, k1_means, left_on='key1', right_index=True)
 # print(pd.merge(df,k1_means,left_on='key1',right_index=True))
 key = ['one', 'two', 'one', 'two', 'one']
-print(people.groupby(key).transform(np.mean))
+
+
+# print(people.groupby(key).transform(np.mean))
+def top(df, n=5, column='tip_pct'):
+    return df.sort_index(by=column)[-n:]
+
+
+# print(top(tips,n=6))
+# print(tips.groupby('smoker').apply(top))
+# group_keys=False传入groupby即可禁止分组键会跟原始的索引共同的构成结构对象中的层次化索引
+tips.groupby('smoker', group_keys=False).apply(top)
+
+# 分位数和捅分析
+frame = DataFrame({'data1': np.random.randn(1000),
+                   'data2': np.random.randn(1000)})
+factor = pd.cut(frame.data1, 4)
+
+
+# print(factor[:10])
+def get_stats(group):
+    return {'min': group.min(), 'max': group.max(), 'count': group.count(), 'mean': group.mean()}
+
+
+# grouped = frame.data2.groupby(factor)
+# print(grouped.apply(get_stats).unstack())
+
+# s = Series(np.random.randn(6))
+# s[::2] = np.nan
+# print(s.fillna(s.mean()))
+# print(s)
+
+# states = ['Ohio', 'New York', 'Vermont', 'Florida', 'Oregon', 'Nevada', 'California', 'Idaho']
+# group_key = ['East'] * 4 + ['West'] * 4
+# data = Series(np.random.randn(8), index=states)
+# data[['Vermont', 'Nevada', 'Idaho']] = np.nan
+# data.groupby(group_key).mean()
+# fill_mean = lambda g: g.fillna(g.mean())
+# print(data.groupby(group_key).apply(fill_mean))
+
+
+# suits = ['H', 'S', 'C', 'D']
+# # card_val = (range(1, 11) + [10] * 3) * 4
+# base_name = ['A'] + range(2, 11) + ['J', 'K', 'Q']
+# print(base_name)
+# cards = []
+# for suit in ['H', 'S', 'C', 'D']:
+#     cards.extend(str(num) + suit for num in base_name)
+# deck = Series(card_val, index=cards)
+#
+#
+# df = DataFrame({'category': ['a', 'a', 'a', 'a', 'b', 'b', 'b', 'b'],
+#                 'data': np.random.randn(8),
+#                 'weights': np.random.rand(8)})
+# print(df)
+# grouped = df.groupby('category')
+# get_wavg = lambda g:np.average(g['data'],weights=g['weights'])
+# print(grouped.apply(get_wavg))
+
+
+close_px = pd.read_csv('stock_px.csv', parse_dates=True, index_col=0)
+
+rets = close_px.pct_change().dropna()
+spx_corr = lambda x: x.corrwith(x['SPX'])
+by_year = rets.groupby(lambda x: x.year)
+# print(by_year.apply(lambda g:g['AAPL'].corr(g['MSFT'])))
+import statsmodels.api as sm
+
+
+def regress(data, yvar, xvars):
+    Y = data[yvar]
+    X = data[xvars]
+    X['intercept'] = 1.
+    result = sm.OLS(Y, X).fit()
+    return result.params
