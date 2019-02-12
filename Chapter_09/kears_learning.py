@@ -142,81 +142,109 @@ from pandas import DataFrame, Series
 
 from datetime import datetime
 
-now = datetime.now()
+# now = datetime.now()
+#
+# # print(now.year)
+# # print(now.month)
+# # print(now.day)
+#
+# delta = datetime(2011, 1, 7) - datetime(2008, 6, 24, 8, 15)
+# # print(delta.days)
+# # print(delta.seconds)
+#
+# from datetime import timedelta
+#
+# start = datetime(2011, 1, 7)
+# # print(start + timedelta(12))
+# # print(start - 2 * timedelta(12))
+#
+# # 字符串和datetime的相互转化
+#
+# stamp = datetime(2011, 1, 3)
+# # print(str(stamp))
+# value = "2011-01-03"
+# # print(datetime.strptime(value, "%Y-%m-%d"))
+#
+# datestrs = ['7/6/2011', '8/6/2011']
+# # print([datetime.strptime(x,'%m/%d/%Y') for x in datestrs])
+#
+#
+# from dateutil.parser import parse
+#
+# # print(parse('2011-01-03'))
+# # print(parse('Jan 31 ,1997 10:45 PM'))
+# # print(parse('6/12/2011',dayfirst=True))
+# # print(parse('6/12/2011'))
+#
+# dates = [datetime(2011, 1, 2), datetime(2011, 1, 5), datetime(2011, 1, 7), datetime(2011, 1, 8)
+#     , datetime(2011, 1, 10), datetime(2011, 1, 12)]
+# ts = Series(np.random.randn(6), index=dates)
+# # print(ts.index.dtype)
+# # print(ts[::2])
+#
+# longer_ts = Series(np.random.randn(1000), index=pd.date_range('1/1/2000', periods=1000))
+#
+# index = pd.date_range('4/1/2012', '6/1/2012')
+# # print(index)
+#
+# from pandas.tseries.offsets import Hour, Minute
+#
+# hour = Hour(4)
+# # print(hour)
+#
+# # 时区问题
+# import pytz
+#
+# # print(pytz.common_timezones[-5:])
+#
+# # print(np.ones((3,4,5),dtype=np.float64).strides)
+#
+# ints = np.ones(10, dtype=np.uint16)
+# floats = np.ones(10, dtype=np.float32)
+# # print(np.issubdtype(ints.dtype,np.integer))
+# # print(np.issubdtype(floats.dtype,np.floating))
+#
+#
+# # reshape()的参数可以是-1，他表示的该维度大小由数据的本身推断而来
+# # flatten ravel 都是可以是数据扁平化
+# # ravel不会产生数据的副本 flatten总是返回数据的副本
+# arr = np.arange(12).reshape((3, 4))
+# # print(arr)
+# # print(arr.ravel())
+# # print(arr.ravel('F'))
+#
+# # 数据的合并和拆分
+# arr1 = np.array([[1, 2, 3], [4, 5, 6]])
+# arr2 = np.array([[7, 8, 9], [10, 11, 12]])
+# # print(np.concatenate((arr1,arr2),axis=0))
+#
+# # vstack hstack 也是对数据进行合并的
+# print(np.vstack((arr1,arr2)))
 
-# print(now.year)
-# print(now.month)
-# print(now.day)
+# 元素的重复操作
+# 区别title与repeat
+# arrs = np.arange(3)
+# print(arrs.repeat(3))
+# arr = np.random.randn(2,2)
+# print(arr.repeat(2,axis=0))
+# print(arr.repeat([2,3],axis=0))
+# print(arr.repeat([2,3],axis=1 ))
 
-delta = datetime(2011, 1, 7) - datetime(2008, 6, 24, 8, 15)
-# print(delta.days)
-# print(delta.seconds)
+# title 的功能是沿着指定轴向堆叠数组的副本
 
-from datetime import timedelta
-
-start = datetime(2011, 1, 7)
-# print(start + timedelta(12))
-# print(start - 2 * timedelta(12))
-
-# 字符串和datetime的相互转化
-
-stamp = datetime(2011, 1, 3)
-# print(str(stamp))
-value = "2011-01-03"
-# print(datetime.strptime(value, "%Y-%m-%d"))
-
-datestrs = ['7/6/2011', '8/6/2011']
-# print([datetime.strptime(x,'%m/%d/%Y') for x in datestrs])
-
-
-from dateutil.parser import parse
-
-# print(parse('2011-01-03'))
-# print(parse('Jan 31 ,1997 10:45 PM'))
-# print(parse('6/12/2011',dayfirst=True))
-# print(parse('6/12/2011'))
-
-dates = [datetime(2011, 1, 2), datetime(2011, 1, 5), datetime(2011, 1, 7), datetime(2011, 1, 8)
-    , datetime(2011, 1, 10), datetime(2011, 1, 12)]
-ts = Series(np.random.randn(6), index=dates)
-# print(ts.index.dtype)
-# print(ts[::2])
-
-longer_ts = Series(np.random.randn(1000), index=pd.date_range('1/1/2000', periods=1000))
-
-index = pd.date_range('4/1/2012', '6/1/2012')
-# print(index)
-
-from pandas.tseries.offsets import Hour, Minute
-
-hour = Hour(4)
-# print(hour)
-
-# 时区问题
-import pytz
-
-# print(pytz.common_timezones[-5:])
-
-# print(np.ones((3,4,5),dtype=np.float64).strides)
-
-ints = np.ones(10, dtype=np.uint16)
-floats = np.ones(10, dtype=np.float32)
-# print(np.issubdtype(ints.dtype,np.integer))
-# print(np.issubdtype(floats.dtype,np.floating))
-
-
-# reshape()的参数可以是-1，他表示的该维度大小由数据的本身推断而来
-# flatten ravel 都是可以是数据扁平化
-# ravel不会产生数据的副本 flatten总是返回数据的副本
-arr = np.arange(12).reshape((3, 4))
+# arr = np.arange(10) * 100
 # print(arr)
-# print(arr.ravel())
-# print(arr.ravel('F'))
 
-# 数据的合并和拆分
-arr1 = np.array([[1, 2, 3], [4, 5, 6]])
-arr2 = np.array([[7, 8, 9], [10, 11, 12]])
-# print(np.concatenate((arr1,arr2),axis=0))
 
-# vstack hstack 也是对数据进行合并的
-print(np.vstack((arr1,arr2)))
+# 广播
+# arr = np.arange(5)
+# print(arr)
+# arr = np.random.randn(4,3)
+
+# print(arr)
+arr = np.random.randn(4,3)
+# print(arr.mean(0))
+row_means = arr.mean(1)
+# print(row_means)
+
+
